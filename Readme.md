@@ -1,4 +1,4 @@
-\#Flower
+#Flower
 
-!\[a flower](images/flower.jpg)
+![a flower](images/flower.jpg)
 
