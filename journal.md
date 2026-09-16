@@ -1,2 +1,4 @@
 hello
-## entry 1: 16th of september 2026
+# Reflective journal
+entry 1: 16th of september 2026
+I was rather confused and a little stressed with the entire workflow at first as I am very new to programing and coding in general. The principle of the files being stored online and switching from different computers made me unaware that I was not being able to properly push certain changes. At the end, it worked out and gave me momentum to start understanding the software’s purpose. I am excited to learn new things as this is a completely new field for me. I study in Film Animation, and I am curious as to how this medium can relate to my artistic works. I feel this class will open interesting doors for me by giving more diverse skills. 
