@@ -8,4 +8,4 @@ useful links <https://www.google.com/search?q=flowers&oq=flower&gs_lcrp=EgZjaHJv
 ## Prototypes:
 
 
-Journal <https://xenoboy666.github.io/CART253/journal.md>
+Journal <https://xenoboy666.github.io/CART253/journal.md> 
