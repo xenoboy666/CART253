@@ -39,6 +39,8 @@ let bird = {
     g:0,
     b:255
 }
+
+
 function setup() {
 createCanvas(400,400);
 }
@@ -56,6 +58,11 @@ ellipse(sun.sunX,sun.sunY,sun.sunSize,sun.sunSize);
 //draw bird
 fill(bird.r,bird.g,bird.b);
 ellipse(bird.birdX,bird.birdY,bird.birdSize,bird.birdSize);
+ console.log(bird.birdX);
+bird.birdX=bird.birdX-1;
+bird.birdX=bird.birdX-1;
+bird.birdX=bird.birdX=constrain(bird.birdX,0,width);
+   
 
-bird.birdX=bird.birdX+1;
+
 }
