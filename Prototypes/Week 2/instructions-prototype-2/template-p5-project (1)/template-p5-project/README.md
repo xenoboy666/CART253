@@ -1,6 +1,6 @@
-# TITLE OF PROJECT
+# Happy Alien PArty
 
-AUTHOR NAME
+Nathan Vallée
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 

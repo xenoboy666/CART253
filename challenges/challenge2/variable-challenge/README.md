@@ -1,6 +1,6 @@
-# JAWS
+# TITLE OF PROJECT
 
-Nathan Vallée
+AUTHOR NAME
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
