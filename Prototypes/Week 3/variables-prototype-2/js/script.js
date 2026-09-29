@@ -32,7 +32,6 @@ let abyss1b=100
 let abyss2r=0
 let abyss2g=0
 let abyss2b=100
-
 let abyssSize2=250
 //create canvas
 function setup() {
