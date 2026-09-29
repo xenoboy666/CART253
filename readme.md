@@ -30,3 +30,12 @@ https://xenoboy666.github.io/CART253/Prototypes/Week%202/instructions-prototype-
 
 
 ![alt text](<images/Capture d’écran 2026-09-23 195511.png>)
+
+
+**week 3**
+
+1:
+
+2: 
+
+3:
