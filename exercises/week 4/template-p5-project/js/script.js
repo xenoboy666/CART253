@@ -39,16 +39,28 @@ createCanvas(500,500);
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-if(mouseIsPressed === true){
-    creature.currentFill=creature.fillStates.angry
-//fill(creature.fillStates.angry)
-}   
-else if(keyIsPressed===true){
-    creature.currentFill=creature.fillStates.happy;
+
+mouseX, mouseY
+let distance=dist(creature.x,creature.y, mouseX, mouseY);
+let mouseIsMoving = movedX >0 || movedY >0
+//console.log(distance);
+if(distance <creature.w/2 && mouseIsMoving){
+    creature.currentFill=creature.fillStates.angry;
 }
 else{
     creature.currentFill=creature.fillStates.neutral;
-}   
+
+} 
+//if(mouseIsPressed === true){
+   // creature.currentFill=creature.fillStates.angry
+//fill(creature.fillStates.angry)
+//}   
+//else if(keyIsPressed===true){
+   // creature.currentFill=creature.fillStates.happy;
+//}
+//else{
+    //creature.currentFill=creature.fillStates.neutral;
+//}   
     background(0);
 push();
 //body
