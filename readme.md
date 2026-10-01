@@ -35,8 +35,25 @@ https://xenoboy666.github.io/CART253/Prototypes/Week%202/instructions-prototype-
 
 **week 3**
 
-1:
+1: Beautiful Day
+https://xenoboy666.github.io/CART253/Prototypes/Week%203/variables-prototype-1/ 
 
-2: 
 
-3:
+
+![alt text](<images/Capture d’écran 2026-09-30 200139.png>) [alt text](readme.md)
+
+
+2: JellyFish Dash
+https://xenoboy666.github.io/CART253/Prototypes/Week%203/variables-prototype-2/ 
+
+
+
+![alt text](<images/Capture d’écran 2026-09-30 200157.png>)
+
+
+
+3: Not so Beautiful Day
+https://xenoboy666.github.io/CART253/Prototypes/Week%203/variables-prototype-3/ 
+
+
+![alt text](<images/Capture d’écran 2026-09-30 200212.png>)
