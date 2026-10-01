@@ -1,6 +1,6 @@
-# TITLE OF PROJECT
+# JellyFish Dash
 
-AUTHOR NAME
+Nathan Vallée
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
