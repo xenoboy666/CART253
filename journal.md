@@ -8,3 +8,5 @@ I found the work tedious at first with the different coordinates having to be sp
 
 entry 3:30th of september 2026
 Yet again, I found the process rather tedious. The workflow was more fragile as of the previous exercise by having the new concept of variables creating new relations inside the code. Many times, I struggled to comprehend the errors I was making only to see I either made typos or didn’t write the correct variable. I also had trouble finding ideas within my range of skill thus resulting in more experimental concepts.  However, even if I was challenged, I had a lot of fun doing this assignment. I am becoming more and more comfortable with this medium and I like the pieces I create no matter how simple they are. I wonder what type of animation will be possible with this kind of motion and making me curious as to what we will learn in this semester.
+
+entry 4:7th of september 2026
