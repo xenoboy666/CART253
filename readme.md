@@ -57,3 +57,33 @@ https://xenoboy666.github.io/CART253/Prototypes/Week%203/variables-prototype-3/
 
 
 ![alt text](<images/Capture d’écran 2026-09-30 200212.png>)
+
+**week 4**
+
+1: The apocalypst: 
+
+https://xenoboy666.github.io/CART253/Prototypes/Week%204/conditionals-prototype-1/ 
+
+
+
+![alt text](<images/prototype 4/Capture d’écran 2026-10-07 204142.png>)
+
+
+
+2:Smiler
+
+https://xenoboy666.github.io/CART253/Prototypes/Week%204/conditionals-prototype-2/ 
+
+
+
+![alt text](<images/prototype 4/Capture d’écran 2026-10-07 204204.png>)
+
+
+
+3:Canon test
+
+https://xenoboy666.github.io/CART253/Prototypes/Week%204/conditionals-prototype-3/ 
+
+
+
+![alt text](<images/prototype 4/Capture d’écran 2026-10-07 204230.png>)
