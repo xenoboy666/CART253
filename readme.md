@@ -8,7 +8,10 @@ This website's purpose is to display the activities and work from the class CART
 ***Challenges:***
 
 **week 2:** https://xenoboy666.github.io/CART253/challenges/challenge1/ 
+
 **week 3:** https://xenoboy666.github.io/CART253/challenges/challenge3/conditionals-challenge/ 
+
+**week 4** https://xenoboy666.github.io/CART253/challenges/challenge4/events-challenge/ 
 
 
 
