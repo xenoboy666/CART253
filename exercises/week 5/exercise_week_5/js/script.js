@@ -65,7 +65,7 @@ mouseTriggerBall.size=mouseTriggerBall.size-event.deltaY;
 
 function mouseDragged(){
     mouseTriggerBall.x=mouseX;
-     }
+     }S
 
 function keyPressed(event){
     if(event.key==="r"){
