@@ -98,7 +98,8 @@ let mouseIsMoving = movedX >0 || movedY >0;
 if(
     (housedistance <housebase.w||
 roofdistance <roof.w||
-landdistance <land.w) && mouseIsMoving){
+landdistance <land.w||
+sundistance <sun.w) && mouseIsMoving){
     housebase.currentFill=housebase.fillStates.burned;
     roof.currentFill=roof.fillStates.burned;
     land.currentFill=land.fillStates.burned;
