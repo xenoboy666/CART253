@@ -36,7 +36,7 @@ background(0);
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-// Move the block when it is falling
+// block movement
 if (block.falling) {
     block.speed += block.gravity;
     block.y += block.speed;
@@ -57,24 +57,27 @@ rect(block.x, block.y, block.size, block.size);
 
 }
 function keyPressed() {
+    //make the block return to mouse
     if (key === "r" || key === "R") {
         block.x = mouseX;
         block.y = mouseY;
         block.speed = 0;
         block.falling = false;
     }
+    //make the block fall to the right
         if (key === "t" || key === "T") {
         block.falling = true;
         block.speed = 0;
         block.speedX = 3;
     }
+    //change the block's color
     if (key === "e" || key === "E") {
     block.fillColor.r = random(0, 255);
     block.fillColor.g = random(0, 255);
     block.fillColor.b = random(0, 255);
 }
 }
-
+//make the black fall downward
 function mousePressed() {
     if (block.falling === false) {
         block.falling = true;
