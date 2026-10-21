@@ -51,7 +51,7 @@ if (rocket.crashed === false) {
         rocket.angle = HALF_PI;
     }
 
-    // Draw the rocket
+    // Draw the rocket body
     push();
     translate(rocket.x, rocket.y);
     rotate(rocket.angle);
@@ -61,7 +61,7 @@ if (rocket.crashed === false) {
 
 
 
-    // Nose cone
+    // draw the rocket head
     fill(255, 80, 50);
     triangle(12, -8, 12, 8, 25, 0);
 
@@ -69,10 +69,12 @@ if (rocket.crashed === false) {
 }
 //command to crash rocket
 function keyPressed() {
+    
     if (key === "c" || key === "C") {
         rocket.crashed = true;
         rocket.velocityY = 0;
             flash = true;
+            
     }
 }
 //command to speed up rocket
@@ -82,12 +84,9 @@ function keyPressed() {
     rocket.speed=3;
       }
 
-//command to make rocket drift
-      function keyPressed(event){
-    if(event.key==="a"){
-    rocket.x=2; 
+//comand rocket up and down 
+function mouseWheel() {
+    
+rocket.y=constrain(rocket.y,0,500);
+rocket.y=rocket.y-event.deltaY;
     }
-    if(event.key==="d"){
-        rocket.y=-2; 
-     }
-       }
