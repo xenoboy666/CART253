@@ -1,24 +1,89 @@
-/**
- * Title of Project
- * Author Name
- * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
- */
+//our beautiful red planet
+let planet={
+x:250,
+y:250,
+w:100,
+h:100
+}
+//asteroids
+let asteroid1={
+x:0,
+y:0,
+w:40,
+h:40
+}
+let asteroid2={
+x:500,
+y:0,
+w:40,
+h:40
+}
+let asteroid3={
+x:0,
+y:500,
+w:40,
+h:40
+}
+let asteroid4={
+x:500,
+y:500,
+w:40,
+h:40
+}
 
-"use strict";
-
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
+//canvas
 function setup() {
+createCanvas(500,500)
 
 }
 
 
-/**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
+//call the commands
 function draw() {
+background(0,0,105)
+drawPlanet();
+movePlanet(planet);
+drawasteroid1();
+drawasteroid2();
+drawasteroid3();
+drawasteroid4();
+}
 
+//draw main red planet
+function drawPlanet() {
+push();
+fill(255,0,0)
+ellipse(planet.x, planet.y, planet.w, planet.h);
+pop(); 
+}
+
+//make the red planet move with the mouse
+function movePlanet(planet){
+planet.x=mouseX
+planet.y=mouseY
+}
+//draw the asteroids 
+function drawasteroid1(){
+push();
+fill(random(255), random(255), random(255));
+ellipse(asteroid1.x, asteroid1.y, asteroid1.w, asteroid1.h);
+pop(); 
+}
+function drawasteroid2(){
+push();
+fill(random(255), random(255), random(255));
+ellipse(asteroid2.x, asteroid2.y, asteroid2.w, asteroid2.h);
+pop(); 
+}
+function drawasteroid3(){
+push();
+fill(random(255), random(255), random(255));
+ellipse(asteroid3.x, asteroid3.y, asteroid3.w, asteroid3.h);
+pop(); 
+}
+function drawasteroid4(){
+push();
+fill(random(255), random(255), random(255));
+ellipse(asteroid4.x, asteroid4.y, asteroid4.w, asteroid4.h);
+pop(); 
 }
