@@ -1,24 +1,47 @@
-/**
- * Title of Project
- * Author Name
- * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
- */
 
-"use strict";
-
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
-function setup() {
-
+//variable for prisoner 
+let prisoner={
+    x:950,
+    y:250,
+    w:100,
+    h:100
+}
+//variable for jail wall
+let jailwall={
+    x:400,
+    y:0,
+    w:10,
+    h:10
 }
 
 
-/**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
-function draw() {
+//create canvas
+function setup() {
+createCanvas(1000,500);
+}
 
+//call commands
+function draw() {
+background(0,0,0);
+drawprisoner();
+drawjailwall(); 
+}
+
+//draw prisoner
+
+function drawprisoner() {
+    push();
+    fill(255, 255, 255);
+
+    triangle(prisoner.x, prisoner.y - prisoner.h / 2,prisoner.x - prisoner.w / 2, prisoner.y + prisoner.h / 2,prisoner.x + prisoner.w / 2, prisoner.y + prisoner.h / 2);
+
+    pop();
+}
+ 
+//draw jailwall
+function drawjailwall(){
+    push();
+    fill(255,255,255);
+    rect(jailwall.x,jailwall.y,jailwall.w,jailwall.h)
+    pop();
 }
