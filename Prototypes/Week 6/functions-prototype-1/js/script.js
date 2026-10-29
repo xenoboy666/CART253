@@ -8,7 +8,7 @@ h:100
 //asteroids
 let asteroid1={
 x:0,
-y:0,
+y:200,
 w:40,
 h:40
 }
@@ -30,6 +30,8 @@ y:500,
 w:40,
 h:40
 }
+//gameover variable
+let gameOver=false; 
 
 //canvas
 function setup() {
@@ -40,14 +42,25 @@ createCanvas(500,500)
 
 //call the commands
 function draw() {
-background(0,0,105)
+background(0,0,105);
+ if (gameOver) {
+        displayGameOver();
+        return;
+    }
 drawPlanet();
 movePlanet(planet);
+moveasteroids();
 drawasteroid1();
 drawasteroid2();
 drawasteroid3();
 drawasteroid4();
-moveasteroids();
+checkCollision(asteroid1);
+checkCollision(asteroid2);
+checkCollision(asteroid3);
+checkCollision(asteroid4);
+  if (gameOver) {
+        displayGameOver();
+    }
 }
 
 //draw main red planet
@@ -100,3 +113,28 @@ function moveasteroids() {
     asteroid4.x=asteroid4.x-1
     asteroid4.y=asteroid4.y-1
 }
+//create gameover screen when planet is hit
+function checkCollision(asteroid) {
+    let distance = dist(
+        planet.x, 
+        planet.y,
+        asteroid.x, 
+        asteroid.y
+    );
+let minimumDistance = planet.w / 2 + asteroid.w / 2;
+
+    if (distance <= minimumDistance) {
+        gameOver = true;
+    }
+}
+function displayGameOver() {
+  
+        background(0);
+
+        fill(255, 0, 0);
+        textSize(50);
+        textAlign(CENTER, CENTER);
+        text("GAME OVER", 250, 250);
+
+        noLoop();
+    }
