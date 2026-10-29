@@ -15,6 +15,8 @@ This website's purpose is to display the activities and work from the class CART
 
 **week 5** https://xenoboy666.github.io/CART253/challenges/challenge5/ 
 
+**week 5** (didn't do it)
+
 ***Prototypes:***
 
 **week 2:** 
@@ -124,3 +126,23 @@ https://xenoboy666.github.io/CART253/Prototypes/Week%205/events-prototype-3/
 
 
 ![alt text](images/Capture3.PNG)
+
+**week 6**
+
+1: Treasure Planet
+
+https://xenoboy666.github.io/CART253/Prototypes/Week%206/functions-prototype-1/ 
+
+![alt text](<images/week 6/Capture.PNG>)
+
+2: Breakout
+
+https://xenoboy666.github.io/CART253/Prototypes/Week%206/functions-prototype-2/ 
+
+![alt text](<images/week 6/Capture2.PNG>)
+
+3: Catch the eggs
+
+https://xenoboy666.github.io/CART253/Prototypes/Week%206/functions-prototype-3/ 
+
+![alt text](<images/week 6/Capture3.PNG>) 
