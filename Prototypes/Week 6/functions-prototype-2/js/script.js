@@ -11,7 +11,7 @@ let jailwall={
     x:400,
     y:0,
     w:10,
-    h:10
+    h:0
 }
 
 
@@ -24,7 +24,9 @@ createCanvas(1000,500);
 function draw() {
 background(0,0,0);
 drawprisoner();
+movejailwall();
 drawjailwall(); 
+moveprisoner();
 }
 
 //draw prisoner
@@ -44,4 +46,12 @@ function drawjailwall(){
     fill(255,255,255);
     rect(jailwall.x,jailwall.y,jailwall.w,jailwall.h)
     pop();
+}
+//make the prisoner walk
+function moveprisoner(){
+    prisoner.x=prisoner.x-1
+}
+//pull jailwall down with mouse
+function movejailwall(){
+jailwall.h=mouseY;
 }
