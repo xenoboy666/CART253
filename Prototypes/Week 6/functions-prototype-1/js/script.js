@@ -47,6 +47,7 @@ drawasteroid1();
 drawasteroid2();
 drawasteroid3();
 drawasteroid4();
+moveasteroids();
 }
 
 //draw main red planet
@@ -86,4 +87,16 @@ push();
 fill(random(255), random(255), random(255));
 ellipse(asteroid4.x, asteroid4.y, asteroid4.w, asteroid4.h);
 pop(); 
+}
+
+// Make asteroids move 
+function moveasteroids() {
+    asteroid1.x=asteroid1.x+1
+    asteroid1.y=asteroid1.y+1
+    asteroid2.x=asteroid2.x-1
+    asteroid2.y=asteroid2.y+1
+    asteroid3.x=asteroid3.x+1
+    asteroid3.y=asteroid3.y-1
+    asteroid4.x=asteroid4.x-1
+    asteroid4.y=asteroid4.y-1
 }
