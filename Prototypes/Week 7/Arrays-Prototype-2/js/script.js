@@ -20,8 +20,6 @@ let beam = {
     w:100,
     h:250
 };
-//Abduction variable
-let abducted= false;
 
 //function canvas
 function setup() {
@@ -49,6 +47,10 @@ rect(50, 250, 30, 100);
 fill(0, 100, 0);
 ellipse(65, 250, 100, 100);
 
+// Draw UFO beam
+fill(100, 255, 255, 80);
+rect(ufo.x - 40, ufo.y + 20, 80, 100);
+
 //draw the ufo
     fill(150);
     ellipse(ufo.x, ufo.y, ufo.w, ufo.h);
@@ -63,21 +65,16 @@ for (let i = cows.length - 1; i >= 0; i--) {
 
     let cow = cows[i];
 
-    // Check if UFO is close to cow
-    if (dist(ufo.x, ufo.y, cow.x, cow.y) < 80) {
-        cow.abducted = true;
-    }
 
-    // Draw beam
-    if (cow.abducted) {
-        fill(100, 255, 255, 80);
-
-        triangle(
-            ufo.x - 40, ufo.y + 20,
-            ufo.x + 40, ufo.y + 20,
-            cow.x, cow.y
-        );
-    }
+// Check if cow touches the beam
+if (
+    cow.x > ufo.x - 40 &&
+    cow.x < ufo.x + 40 &&
+    cow.y > ufo.y + 20 &&
+    cow.y < ufo.y + 270
+) {
+    cow.abducted = true;
+}
 
     // Move cow upwards
     if (cow.abducted) {
@@ -97,13 +94,14 @@ for (let i = cows.length - 1; i >= 0; i--) {
 
 }
 
-
-//function for abduction if SPACE is pressed
-function keyPressed() {
-    if (key === ' ') {
-        abducted = true;
-    }
-
-
+// Check if all cows are abducted
+if (cows.length === 0) {
+    fill(0, 255, 0);
+    textSize(40);
+    textAlign(CENTER);
+    text("ALIENS WIN!", 250, 250);
 }
 }
+
+
+
