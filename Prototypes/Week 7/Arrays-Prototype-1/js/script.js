@@ -6,11 +6,14 @@ let snake = [
     { x: 210, y: 250 }
 ];
 
+//make the snake go bigger 
 snake.push({
     x: snake[snake.length - 1].x,
     y: snake[snake.length - 1].y
 });
-
+//direction variables
+let directionX = 20;
+let directionY = 0;
 
 
 function setup() {
@@ -31,6 +34,7 @@ background(0, 180, 0);
     }
 //call move snake function
     moveSnake();
+    keyPressed();
 }
 
 //move the snake 
@@ -42,4 +46,28 @@ function moveSnake() {
     }
 
     snake[0].x += 20;
+}
+
+//control the snake with the arrow keys
+function keyPressed() {
+
+    if (keyCode === UP_ARROW) {
+        directionX = 0;
+        directionY = -20;
+    }
+
+    if (keyCode === DOWN_ARROW) {
+        directionX = 0;
+        directionY = 20;
+    }
+
+    if (keyCode === LEFT_ARROW) {
+        directionX = -20;
+        directionY = 0;
+    }
+
+    if (keyCode === RIGHT_ARROW) {
+        directionX = 20;
+        directionY = 0;
+    }
 }
