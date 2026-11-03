@@ -49,6 +49,8 @@ background(0, 180, 0);
 //draw apple
 fill(255, 0, 0);
 ellipse(apple.x, apple.y, apple.size, apple.size);
+
+checkApple();
 }
 
 //move the snake 
@@ -85,5 +87,23 @@ function keyPressed() {
     if (keyCode === RIGHT_ARROW) {
         directionX = 20;
         directionY = 0;
+    }
+}
+//make the snake grow when it eats the apple
+function checkApple() {
+
+    let d = dist(snake[0].x, snake[0].y, apple.x, apple.y);
+
+    if (d < 20) {
+
+        // Grow the snake
+        snake.push({
+            x: snake[snake.length - 1].x,
+            y: snake[snake.length - 1].y
+        });
+
+        // New apple position
+        apple.x = floor(random(0, 25)) * 20;
+        apple.y = floor(random(0, 25)) * 20;
     }
 }
