@@ -1,24 +1,34 @@
-/**
- * Title of Project
- * Author Name
- * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
- */
+ //UFO variable
+ let ufo = {
+    x:300,
+    y:100,
+    w:120,
+    h:50,
+    speed:2
+};
+//cow variable
+let cow = {
+    x:250,
+    y:400,
+    w:120,
+    h:50,
+    speed:1
+};
 
-"use strict";
+//ufo beam variable
+let beam = {
+    x: 250,
+    y:150,
+    w:100,
+    h:250
+};
 
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
 function setup() {
-
+createCanvas(600, 600);
 }
 
 
-/**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
+ 
 function draw() {
 
 }
