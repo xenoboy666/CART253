@@ -46,5 +46,19 @@ ellipse(spider.x+8, spider.y-5, 8);
 
         let fly = flies[i];
 }
+//move flies to the center
+ let angle = atan2(250 - fly.y, 250 - fly.x);
+
+        fly.x += cos(angle) * fly.speed;
+        fly.y += sin(angle) * fly.speed;
+
+//Draw flies
+ fill(200);
+ellipse(fly.x, fly.y, fly.size);
+
+//Draw fly wings
+ fill(255);
+        ellipse(fly.x - 5, fly.y - 5, 8, 5);
+        ellipse(fly.x + 5, fly.y - 5, 8, 5);
 
 }
