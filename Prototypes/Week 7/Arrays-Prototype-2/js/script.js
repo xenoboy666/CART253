@@ -33,6 +33,10 @@ createCanvas(500, 500);
 function draw() {
 background(0,20,60);
 
+//move the ufo with the mouse
+ufo.x = mouseX;
+ufo.y = mouseY; 
+
 //draw ground
 fill(0, 100, 0);
 rect(0, 350, 500, 150);
@@ -51,9 +55,8 @@ ellipse(65, 250, 100, 100);
        
 fill(150);
  ellipse(ufo.x, ufo.y - 10, 60, 35);
-//move the ufo with the mouse
-ufo.x = mouseX;
-ufo.y = mouseY; 
+
+
 
 // Loop through all cows
 for (let i = cows.length - 1; i >= 0; i--) {
@@ -79,7 +82,7 @@ for (let i = cows.length - 1; i >= 0; i--) {
     // Move cow upwards
     if (cow.abducted) {
         cow.y -= cow.speed;
-    }
+    }  
 
     // Draw cow body
     fill(255);
@@ -90,7 +93,7 @@ for (let i = cows.length - 1; i >= 0; i--) {
     if (cow.y < ufo.y + 40 && cow.abducted) {
         cows.splice(i, 1);
     }
-}
+
 
 }
 
@@ -103,4 +106,4 @@ function keyPressed() {
 
 
 }
-
+}
