@@ -40,4 +40,11 @@ ellipse(spider.x, spider.y, spider.size, spider.size);
 fill(255);
 ellipse(spider.x-8, spider.y-5, 8);
 ellipse(spider.x+8, spider.y-5, 8);
+
+//Loop between flies
+ for (let i = 0; i < flies.length; i++) {
+
+        let fly = flies[i];
+}
+
 }
