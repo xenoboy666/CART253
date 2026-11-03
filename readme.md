@@ -146,3 +146,16 @@ https://xenoboy666.github.io/CART253/Prototypes/Week%206/functions-prototype-2/
 https://xenoboy666.github.io/CART253/Prototypes/Week%206/functions-prototype-3/ 
 
 ![alt text](<images/week 6/Capture3.PNG>) 
+
+**week 7**
+
+1: Apple Eater
+
+https://xenoboy666.github.io/CART253/Prototypes/Week%207/Arrays-Prototype-1/ 
+
+![alt text](<images/week 7/Capture 1.PNG>) 
+
+2:
+
+3:
+
