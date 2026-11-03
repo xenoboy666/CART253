@@ -20,6 +20,12 @@ function setup() {
 createCanvas(500, 500);
 }
 
+//apple variable
+let apple = {
+    x:100,
+    y:100,
+    size:20
+};
 
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
@@ -39,6 +45,10 @@ background(0, 180, 0);
     }
 //call keypressed function
     keyPressed();
+
+//draw apple
+fill(255, 0, 0);
+ellipse(apple.x, apple.y, apple.size, apple.size);
 }
 
 //move the snake 
