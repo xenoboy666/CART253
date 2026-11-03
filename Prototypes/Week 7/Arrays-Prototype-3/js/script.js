@@ -28,5 +28,16 @@ createCanvas(500, 500);
 function draw() {
 background(50,100,50);
 
-//
+//Make spider follow mouse
+spider.x = mouseX;
+spider.y = mouseY;
+
+//draw spider
+fill(20);
+ellipse(spider.x, spider.y, spider.size, spider.size);
+
+//Draw spider eyes
+fill(255);
+ellipse(spider.x-8, spider.y-5, 8);
+ellipse(spider.x+8, spider.y-5, 8);
 }
