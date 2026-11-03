@@ -161,5 +161,9 @@ https://xenoboy666.github.io/CART253/Prototypes/Week%207/Arrays-Prototype-2/
 
 ![alt text](<images/week 7/Capture 2.PNG>) 
 
-3:
+3: Spider Buffet
+
+https://xenoboy666.github.io/CART253/Prototypes/Week%207/Arrays-Prototype-3/ 
+
+![alt text](<images/week 7/Capture 3.PNG>) 
 
