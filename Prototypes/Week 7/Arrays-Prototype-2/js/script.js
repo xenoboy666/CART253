@@ -35,6 +35,18 @@ createCanvas(500, 500);
 function draw() {
 background(0,20,60);
 
+//draw ground
+fill(0, 100, 0);
+rect(0, 350, 500, 150);
+
+//draw tree trunk
+fill(139, 69, 19);
+rect(50, 250, 30, 100);
+
+//draw tree leaves
+fill(0, 100, 0);
+ellipse(65, 250, 100, 100);
+
 //draw the ufo
     fill(150);
     ellipse(ufo.x, ufo.y, ufo.w, ufo.h);
@@ -65,6 +77,8 @@ ufo.y = mouseY;
   if (cow.y < ufo.y + 40) {
         abducting = false;
     }
+
+
 }
 
 
@@ -73,5 +87,7 @@ function keyPressed() {
     if (key === ' ') {
         abducting = true;
     }
+
+
 }
 
