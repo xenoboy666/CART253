@@ -11,8 +11,16 @@
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
-function setup() {
 
+let snake = [
+    { x: 250, y: 250 },
+    { x: 230, y: 250 },
+    { x: 210, y: 250 }
+];
+
+
+function setup() {
+createCanvas(500, 500);
 }
 
 
@@ -20,5 +28,6 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+background(0, 180, 0);
 
 }
