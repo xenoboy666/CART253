@@ -1,24 +1,32 @@
-/**
- * Title of Project
- * Author Name
- * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
- */
+//spider variables
+let spider ={
+    x: 250,
+    y: 250,
+    size:40
+};
+//array for the flies
+let flies=[];
 
-"use strict";
-
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
 function setup() {
+createCanvas(500, 500);
 
+//create 12 flies and add to array
+ for (let i = 0; i < 12; i++) {
+        let fly = {
+            x: random(width),
+            y: random(height),
+            size: 15,
+            speed: 1
+        };
+
+        flies.push(fly);
+}
 }
 
 
-/**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
-function draw() {
 
+function draw() {
+background(50,100,50);
+
+//
 }
