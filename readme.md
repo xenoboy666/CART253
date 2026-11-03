@@ -155,7 +155,11 @@ https://xenoboy666.github.io/CART253/Prototypes/Week%207/Arrays-Prototype-1/
 
 ![alt text](<images/week 7/Capture 1.PNG>) 
 
-2:
+2: Cow Collecting
+
+https://xenoboy666.github.io/CART253/Prototypes/Week%207/Arrays-Prototype-2/
+
+![alt text](<images/week 7/Capture 2.PNG>) 
 
 3:
 
