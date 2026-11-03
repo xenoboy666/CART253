@@ -27,13 +27,17 @@ createCanvas(500, 500);
 function draw() {
 //background 
 background(0, 180, 0);
+//slow frame count down so the snake moves slower
+ let speed = 10; // Adjust this value to change the speed
+ if (frameCount % speed === 0) {
+        moveSnake();
+    }
 //draw snake
    for (let i = 0; i < snake.length; i++) {
         fill(0, 255, 0);
         rect(snake[i].x, snake[i].y, 20, 20);
     }
-//call move snake function
-    moveSnake();
+//call keypressed function
     keyPressed();
 }
 
@@ -45,7 +49,9 @@ function moveSnake() {
         snake[i].y = snake[i - 1].y;
     }
 
-    snake[0].x += 20;
+snake[0].x += directionX;
+snake[0].y += directionY; 
+
 }
 
 //control the snake with the arrow keys
