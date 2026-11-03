@@ -6,14 +6,12 @@
     h:50,
     speed:2
 };
-//cow variable
-let cow = {
-    x:250,
-    y:400,
-    w:60,
-    h:25,
-    speed:1
-};
+//cows variable
+let cows = [
+    { x: 100, y: 400, speed: 1, abducted: false },
+    { x: 250, y: 400, speed: 1, abducted: false },
+    { x: 400, y: 400, speed: 1, abducted: false }
+];
 
 //ufo beam variable
 let beam = {
@@ -23,7 +21,7 @@ let beam = {
     h:250
 };
 //Abduction variable
-let abducting= false;
+let abducted= false;
 
 //function canvas
 function setup() {
@@ -56,28 +54,43 @@ fill(150);
 //move the ufo with the mouse
 ufo.x = mouseX;
 ufo.y = mouseY; 
-    //draw the beam
-    if (abducting) {
+
+// Loop through all cows
+for (let i = cows.length - 1; i >= 0; i--) {
+
+    let cow = cows[i];
+
+    // Check if UFO is close to cow
+    if (dist(ufo.x, ufo.y, cow.x, cow.y) < 80) {
+        cow.abducted = true;
+    }
+
+    // Draw beam
+    if (cow.abducted) {
         fill(100, 255, 255, 80);
+
         triangle(
             ufo.x - 40, ufo.y + 20,
             ufo.x + 40, ufo.y + 20,
             cow.x, cow.y
         );
-}
-//draw the cow
-    fill(255);
-    ellipse(cow.x, cow.y, cow.w, cow.h);
+    }
 
-//cow levitation
- if (abducting) {
+    // Move cow upwards
+    if (cow.abducted) {
         cow.y -= cow.speed;
     }
-//cow flies to the ufo
-  if (cow.y < ufo.y + 40) {
-        abducting = false;
-    }
 
+    // Draw cow body
+    fill(255);
+    ellipse(cow.x, cow.y, 50, 60);
+
+
+    // Remove cow when it reaches UFO
+    if (cow.y < ufo.y + 40 && cow.abducted) {
+        cows.splice(i, 1);
+    }
+}
 
 }
 
@@ -85,7 +98,7 @@ ufo.y = mouseY;
 //function for abduction if SPACE is pressed
 function keyPressed() {
     if (key === ' ') {
-        abducting = true;
+        abducted = true;
     }
 
 
