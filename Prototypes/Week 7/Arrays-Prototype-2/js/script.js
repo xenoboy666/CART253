@@ -40,8 +40,10 @@ background(0,20,60);
     ellipse(ufo.x, ufo.y, ufo.w, ufo.h);
        
 fill(150);
-    ellipse(ufo.x, ufo.y - 10, 60, 35);
-
+ ellipse(ufo.x, ufo.y - 10, 60, 35);
+//move the ufo with the mouse
+ufo.x = mouseX;
+ufo.y = mouseY; 
     //draw the beam
     if (abducting) {
         fill(100, 255, 255, 80);
